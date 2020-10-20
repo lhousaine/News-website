@@ -1,0 +1,260 @@
+@font-face{
+  font-family: admin;
+  src:url("../fonts/admin.ttf")
+}
+@font-face{
+  font-family: Berton-Voyage;
+  src:url("../fonts/Berton-Voyage.ttf")
+}
+@font-face{
+  font-family: colab;
+  src:url("../fonts/colab.otf")
+}
+@font-face{
+  font-family: Prager-Headlines;
+  src:url("../fonts/Prager-Headlines.otf")
+}
+*{
+  text-align: center;
+  text-decoration: none;
+  text-transform: capitalize;
+  font-family: admin;
+}
+body{
+  margin: 0;
+  padding: 0 100px;
+    background-color:rgba(8,0,8, 0.8);
+}
+.principale_div{
+  width: 100%;
+  padding: 0px;
+}
+/*header**************************************************************************/
+header{
+   margin:0;
+   height: 200px;
+   background-color: #00f;
+   color: #000;
+}
+.head_div{
+  width: 100%;
+  height: 150px;
+  display: flex;
+  flex-direction: row;
+}
+#horaire{
+  width:40%;
+  height:150px;
+  background-color:#00f;
+}
+#hr{
+  margin-top: 5px;
+  border: none;
+  color:#fff;
+  background-color: #00f;
+  line-height: 30px;
+  height: 30px;
+  width: 200px;
+  display: inline-block;
+  font-size: 24px;
+}
+#dt{
+  border: none;
+  color:#fff;
+  background-color: #00f;
+  line-height: 30px;
+  height: 30px;
+  width: 200px;
+  display: inline-block;
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+.logo{
+  width: 60%;
+  height: 150px;
+  text-align: center;
+}
+.logo img{
+height: 150px;
+}
+#list_head{
+height: 40px;
+background-color: #0ff;
+}
+#list_head>li{
+  list-style-type: none;
+  line-height: 40px;
+  font-weight: bold;
+  font-size: 24px;
+  display: inline-block;
+}
+li a{
+  padding: 0 20px;
+  color: #ee5;
+  text-decoration:none;
+  background-color: #0ff;
+  transition:0.1s ease all;
+}
+li a:hover{
+  height: 40px;
+  background-color:#007;
+  color: white;
+}
+/****body de la page*************************************************************/
+.container{
+background-color: white;
+  display: flex;
+  flex-direction: row;
+}
+/*left*****************************************************************************/
+.left{
+   width: 25%;
+    border:solid 2px red;
+}
+.poste{
+  max-height: 400px;
+  width:100%;
+  background-color: white;
+}
+#p_title{
+  background-color: #0c0;
+  color: #fff;
+  text-align: center;
+  font-weight: 600;
+  font-family: admin;
+  font-size: 36px;
+}
+.left:nth-child(0){
+  margin-top:0;
+}
+/*
+/*principe_info********************************************************************/
+.principe_info{
+    width: 55%;
+    border:solid 2px red;
+}
+#im_pr{
+  width: 90%;
+}
+#ev_desc{
+  width: 90%;
+  height: 40px;
+  display: inline-block;
+  font-family: Prager-Headlines;
+}
+#numero_ev{
+  width: 40px;
+  height: 40px;
+  margin: 2px;
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 20px;
+  display: inline-block;
+  background-color: #ddd;
+  line-height: 40px;
+  color: #111;
+  border-radius: 20px;
+  border:1px solid blue;
+}
+#numero_ev:hover{
+    border:1px solid black;
+    background-color: #22a;
+    color: #333;
+}
+#numero_ev:active{
+  border:1px solid black;
+  background-color: #fff;
+  color: #000;
+}
+.p_s{
+  width: 100%;
+  height: 200px;
+}
+#p_t{
+  width: 100%;
+  height: 40px;
+  color:#eee;
+  background-color:#f0f ;
+  line-height: 40px;
+}
+#div_comment{
+  border:dotted 2px red;
+  margin-bottom: 10px;
+}
+#comment{
+  background-color: #880;
+  color: white;
+}
+#p_form{
+  display: inline-block;
+  width: 100px;
+}
+textarea{
+  width: 60%;
+  height: 300px;
+}
+#nb_caract{
+  border:none;
+  display: inline-block;
+  width: 50px;
+}
+#but{
+  border: none;
+  color: #fff;
+  background-color:#f80;
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+#but:hover{
+  background-color: #aaa;
+  color:#a22;
+}
+/*video_photo**********************************************************************/
+.video_photo{
+  width: 20%;
+  border:solid 2px red;
+  padding-top: 10px;
+}
+#vid_ph{
+  width: 95%;
+  height: 150px;
+}
+#vid_ph img,#vid_ph video{
+  width: 95%;
+  height: 150px;
+}
+/*footer***************************************************************************/
+footer{
+  height: 100px;
+  width:100%;
+  margin: 0;
+  border:solid 2px red;
+  background-color: #aaa;
+  color: #111;
+  padding: 10px auto;
+  text-align: center;
+}
+#list_footer{
+padding-left:10px;
+margin-bottom: 5px;
+}
+#list_footer>li{
+  padding: 10px;
+  list-style-type: none;
+  display: inline-block;
+}
+#list_footer>li:hover{
+  color: #fff;
+  background-color: #000;
+}
+.rev{
+  text-align: right;
+  margin-bottom: 10px;
+  margin-right: 20px;
+  line-height: 20px;
+  font-family: monospace;
+  font-weight: bold;
+}
