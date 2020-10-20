@@ -23,36 +23,46 @@
 body{
   margin: 0;
   padding: 0 100px;
-  background-color:rgba(0,0,160, 0.8);
+  background-color:#f90;
 }
 .principale_div{
   width: 100%;
   padding: 0px;
-  border:solid 2px red;
+  border:solid 2px #888;
+  background-color: white;
 }
 /*header**************************************************************************/
 header{
    margin:0;
-   height: 200px;
-   background-color: #00f;
+   padding: 0;
+   height: 127px;
+   background-color: #1298CE;
    color: #000;
 }
 .head_div{
   width: 100%;
-  height: 150px;
+  height: 80px;
   display: flex;
   flex-direction: row;
 }
+.logo img{
+height: 70px;
+width:100px;
+border-radius: 10px;
+margin-top: 10px;
+margin-left: 150px;
+}
 #horaire{
   width:40%;
-  height:150px;
-  background-color:#00f;
+  height:50px;
+  margin-left: 300px;
+  padding-top:30px;
 }
 #hr{
   margin-top: 5px;
   border: none;
   color:#fff;
-  background-color: #00f;
+  background-color: #1298CE;
   line-height: 30px;
   height: 30px;
   width: 200px;
@@ -62,7 +72,7 @@ header{
 #dt{
   border: none;
   color:#fff;
-  background-color: #00f;
+  background-color: #1298CE;
   line-height: 30px;
   height: 30px;
   width: 200px;
@@ -70,49 +80,39 @@ header{
   font-size: 24px;
   margin-bottom: 5px;
 }
-.logo{
-  width: 60%;
-  height: 150px;
-  text-align: center;
-}
-.logo img{
-height: 150px;
-}
 #list_head{
-height: 35px;
+height: 30px;
 background-color: #0ff;
 }
 #list_head>li{
   list-style-type: none;
-  line-height: 35px;
+  line-height: 30px;
+  margin-left: 10px;
   font-weight: bold;
   font-size: 24px;
   display: inline-block;
 }
-li a{
+#hd_li a{
   padding: 0 20px;
-  color: #ee5;
+  color:white;
   text-decoration:none;
-  background-color: #0ff;
   transition:0.1s ease all;
 }
-li a:hover{
-  background-color:#007;
-  color: white;
+#hd_li a:hover{
+  background-color:white ;
+  color:#548 ;
 }
 .container{
   background-color: white;
 }
 .subcontainer{
-border: 1px black groove;
 margin: 0;
 }
 .subcontainer h1{
   margin: 0;
   color: #eee;
-  background-color:#a0a;
+  background-color:#777;
   font-family:monospace;
-  font-family: monospace;
   height: 50px;
   line-height: 50px;
 }
@@ -131,6 +131,7 @@ margin: 0;
   border-top:1px solid #888;
   height: 170px;
  width:100%;
+ text-align:left;
 }
 .event p{
   font-family: Prager-Headlines;
@@ -154,6 +155,12 @@ margin: 0;
   margin-bottom: 0;
   height: 50px;
   line-height: 50px;
+}
+.arch{
+  width: 80%;
+  margin: 10px 10%;
+  background-color: white;
+  color:#444;
 }
 /*footer***************************************************************************/
 footer{

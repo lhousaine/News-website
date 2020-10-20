@@ -23,7 +23,7 @@
 body{
   margin: 0;
   padding: 0 100px;
-    background-color:rgba(8,0,8, 0.8);
+  background-color:rgba(8,0,8, 0.8);
 }
 .principale_div{
   width: 100%;
@@ -32,26 +32,35 @@ body{
 /*header**************************************************************************/
 header{
    margin:0;
-   height: 200px;
-   background-color: #00f;
+   padding: 0;
+   height: 127px;
+   background-color: #1298CE;
    color: #000;
 }
 .head_div{
   width: 100%;
-  height: 150px;
+  height: 80px;
   display: flex;
   flex-direction: row;
 }
+.logo img{
+height: 70px;
+width:100px;
+border-radius: 10px;
+margin-top: 10px;
+margin-left: 150px;
+}
 #horaire{
   width:40%;
-  height:150px;
-  background-color:#00f;
+  height:50px;
+  margin-left: 300px;
+  padding-top:30px;
 }
 #hr{
   margin-top: 5px;
   border: none;
   color:#fff;
-  background-color: #00f;
+  background-color: #1298CE;
   line-height: 30px;
   height: 30px;
   width: 200px;
@@ -61,7 +70,7 @@ header{
 #dt{
   border: none;
   color:#fff;
-  background-color: #00f;
+  background-color: #1298CE;
   line-height: 30px;
   height: 30px;
   width: 200px;
@@ -69,36 +78,27 @@ header{
   font-size: 24px;
   margin-bottom: 5px;
 }
-.logo{
-  width: 60%;
-  height: 150px;
-  text-align: center;
-}
-.logo img{
-height: 150px;
-}
 #list_head{
-height: 40px;
+height: 30px;
 background-color: #0ff;
 }
 #list_head>li{
   list-style-type: none;
-  line-height: 40px;
+  line-height: 30px;
+  margin-left: 20px;
   font-weight: bold;
   font-size: 24px;
   display: inline-block;
 }
-li a{
+#hd_li a{
   padding: 0 20px;
-  color: #ee5;
+  color:white;
   text-decoration:none;
-  background-color: #0ff;
   transition:0.1s ease all;
 }
-li a:hover{
-  height: 40px;
-  background-color:#007;
-  color: white;
+#hd_li a:hover{
+  background-color:orange;
+  color:white ;
 }
 /****body de la page*************************************************************/
 .container{
@@ -124,6 +124,10 @@ background-color: white;
   font-family: admin;
   font-size: 36px;
 }
+#event_title{
+  color: #333;
+  cursor: pointer;
+}
 .left:nth-child(0){
   margin-top:0;
 }
@@ -138,7 +142,7 @@ background-color: white;
 }
 #ev_desc{
   width: 90%;
-  height: 40px;
+  height: 50px;
   display: inline-block;
   font-family: Prager-Headlines;
 }
@@ -167,8 +171,9 @@ background-color: white;
   color: #000;
 }
 .p_s{
-  width: 100%;
-  height: 200px;
+  width:100% ;
+  height: 140px;
+  padding-bottom: 20px;
 }
 #p_t{
   width: 100%;
@@ -176,41 +181,18 @@ background-color: white;
   color:#eee;
   background-color:#f0f ;
   line-height: 40px;
+  clear:both;
 }
-#div_comment{
-  border:dotted 2px red;
-  margin-bottom: 10px;
-}
-#comment{
-  background-color: #880;
-  color: white;
-}
-#p_form{
-  display: inline-block;
+#im_info{
+  float:left;
+  margin-left: 10px;
   width: 100px;
+  height: 100px;
 }
-textarea{
-  width: 60%;
-  height: 300px;
-}
-#nb_caract{
-  border:none;
-  display: inline-block;
-  width: 50px;
-}
-#but{
-  border: none;
-  color: #fff;
-  background-color:#f80;
-  width: 100%;
-  height: 60px;
-  line-height: 60px;
-  font-size: 24px;
-  margin-bottom: 10px;
-}
-#but:hover{
-  background-color: #aaa;
-  color:#a22;
+#story_title,#art_title,#op_title{
+  line-height: 40px;
+  color: black;
+  font-family: Berton-Voyage;
 }
 /*video_photo**********************************************************************/
 .video_photo{
@@ -231,7 +213,7 @@ footer{
   height: 100px;
   width:100%;
   margin: 0;
-  border:solid 2px red;
+  border:solid 2px #888;
   background-color: #aaa;
   color: #111;
   padding: 10px auto;
@@ -240,6 +222,7 @@ footer{
 #list_footer{
 padding-left:10px;
 margin-bottom: 5px;
+text-align: left;
 }
 #list_footer>li{
   padding: 10px;
@@ -247,8 +230,8 @@ margin-bottom: 5px;
   display: inline-block;
 }
 #list_footer>li:hover{
-  color: #fff;
-  background-color: #000;
+  color: #ccc;
+  background-color:white;
 }
 .rev{
   text-align: right;

@@ -23,36 +23,45 @@
 body{
   margin: 0;
   padding: 0 100px;
-  background-color:rgba(0,0,160, 0.8);
+  background-color:#ff0;
 }
 .principale_div{
   width: 100%;
   padding: 0px;
-
+  border:solid 2px #888;
 }
 /*header**************************************************************************/
 header{
    margin:0;
-   height: 200px;
-   background-color: #00f;
+   padding: 0;
+   height: 127px;
+   background-color: #1298CE;
    color: #000;
 }
 .head_div{
   width: 100%;
-  height: 150px;
+  height: 80px;
   display: flex;
   flex-direction: row;
 }
+.logo img{
+height: 70px;
+width:100px;
+border-radius: 10px;
+margin-top: 10px;
+margin-left: 150px;
+}
 #horaire{
   width:40%;
-  height:150px;
-  background-color:#00f;
+  height:50px;
+  margin-left: 300px;
+  padding-top:30px;
 }
 #hr{
   margin-top: 5px;
   border: none;
   color:#fff;
-  background-color: #00f;
+  background-color: #1298CE;
   line-height: 30px;
   height: 30px;
   width: 200px;
@@ -62,7 +71,7 @@ header{
 #dt{
   border: none;
   color:#fff;
-  background-color: #00f;
+  background-color: #1298CE;
   line-height: 30px;
   height: 30px;
   width: 200px;
@@ -70,99 +79,134 @@ header{
   font-size: 24px;
   margin-bottom: 5px;
 }
-.logo{
-  width: 60%;
-  height: 150px;
-  text-align: center;
-}
-.logo img{
-height: 150px;
-}
 #list_head{
-height: 35px;
+height: 30px;
 background-color: #0ff;
 }
 #list_head>li{
   list-style-type: none;
-  line-height: 35px;
+  line-height: 30px;
+  margin-left: 20px;
   font-weight: bold;
   font-size: 24px;
   display: inline-block;
 }
-li a{
+#hd_li a{
   padding: 0 20px;
-  color: #ee5;
+  color:white;
   text-decoration:none;
-  background-color: #0ff;
   transition:0.1s ease all;
 }
-li a:hover{
-  background-color:#007;
-  color: white;
+#hd_li a:hover{
+  background-color:orange;
+  color:white ;
 }
+/****body de la page*************************************************************/
 .container{
+background-color: white;
+  display: flex;
+  flex-direction: row;
+}
+/*left*****************************************************************************/
+.left{
+   width: 25%;
+    border:solid 2px #888;
+}
+.poste{
+  max-height: 400px;
+  width:100%;
   background-color: white;
 }
-.subcontainer{
-border: 1px black groove;
-margin: 0;
-}
-.subcontainer h1{
-  margin: 0;
-  color: #eee;
-  background-color:#a0a;
-  font-family:monospace;
-    font-family: monospace;
+#rec_im{
+  width: 50px;
   height: 50px;
-  line-height: 50px;
+  float: left;
 }
-.event p{
-  font-family: Prager-Headlines;
-  line-height: 20px;
+#p_title{
+  background-color: #0c0;
+  color: #fff;
+  text-align: center;
+  font-weight: 600;
+  font-family: admin;
+  font-size: 20px;
 }
 #event_title{
-  color: #0f0;
-  font-family: colab;
+  color: #333;
+  cursor: pointer;
 }
 .left:nth-child(0){
   margin-top:0;
 }
+/*
 /*principe_info********************************************************************/
 .principe_info{
-    width: 100%;
+    width: 55%;
+    border:solid 2px #888;
 }
-.event{
-  border-top:1px solid #888;
- width:100%;
-}
-#im_p{
-  width :500px;
-  height: 500px;
-  margin-top: 10px;
+#im_pr{
+  width: 90%;
 }
 #ev_desc{
-  width: 80%;
-  height: 40px;
-  overflow: hidden;
+  width: 90%;
   display: inline-block;
+  font-family: Prager-Headlines;
+  margin-bottom: 20px;
 }
-.subcontainer>h3{
-  margin-top: 0;
-  margin-bottom: 0;
-  height: 50px;
-  line-height: 50px;
+#div_comment{
+  background-color: #789;
+  color: #000;
+  margin:20px;
+  text-align: left;
+}
+#comment{
+  background-color: #880;
+  color: white;
+}
+#p_form{
+  display: inline-block;
+  width: 100px;
+}
+textarea{
+  width: 60%;
+  height: 300px;
+}
+#nb_caract{
+  border:none;
+  display: inline-block;
+  width: 50px;
+}
+/*video_photo**********************************************************************/
+.video_photo{
+  width: 20%;
+  border:solid 2px #888;
+  padding-top: 10px;
+}
+#vid_ph{
+  width: 95%;
+  height: 150px;
+}
+#vid_ph img,#vid_ph video{
+  width: 95%;
+  height: 150px;
+}
+.info_vid{
+  color:red;
+  text-decoration: none;
 }
 /*footer***************************************************************************/
 footer{
   height: 100px;
   width:100%;
-  margin:0;
+  margin: 0;
+  border:solid 2px #888;
   background-color: #aaa;
   color: #111;
   padding: 10px auto;
+  text-align: center;
+  cursor:cell;
 }
 #list_footer{
-margin-left:10px;
+padding-left:10px;
 margin-bottom: 5px;
 text-align: left;
 }
@@ -170,6 +214,10 @@ text-align: left;
   padding: 10px;
   list-style-type: none;
   display: inline-block;
+}
+#list_footer>li:hover{
+  color: #fff;
+  background-color: #000;
 }
 .rev{
   text-align: right;
